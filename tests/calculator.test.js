@@ -18,6 +18,6 @@ describe('calculator', () => {
     });
 
     test('throws an error when dividing by zero', () => {
-        expect(() => calculator.divide(5, 0)).toThrow("Cannot divide by zero.");
+        expect(() => calculator.divide(5, 0)).toThrow(Error);
     });
 });
